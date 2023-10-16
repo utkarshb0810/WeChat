@@ -11,11 +11,11 @@ const Login = () => {
     e.preventDefault();
     const email = e.target[0].value;
     const password = e.target[1].value;
-    console.log(email);
-    console.log(password);
+    // console.log(email);
+    // console.log(password);
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/")
+      navigate("/");
     } catch (err) {
       setErr(true);
     }
@@ -31,7 +31,9 @@ const Login = () => {
           <button>Sign in</button>
           {err && <span>Something went wrong</span>}
         </form>
-        <p>New To WeChat? <Link to="/register">Sign Up</Link></p>
+        <p>
+          New To WeChat? <Link to="/register">Sign Up</Link>
+        </p>
       </div>
     </div>
   );

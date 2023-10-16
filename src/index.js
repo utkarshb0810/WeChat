@@ -1,5 +1,5 @@
 import React from "react";
-// ReactDOM is used to render React components into the DOM (Document Object Model).
+// ReactDOM is used to render React components into the DOM.
 import ReactDOM from "react-dom/client";
 import App from "./App";
 // The purpose for having a Context Provider wrap around children is to keep track of state and props, read on how state and props between parents and children affect each other.
